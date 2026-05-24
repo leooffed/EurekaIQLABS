@@ -6,16 +6,16 @@ import BookingSystem from '@/components/contacts/Booking';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 import Headers from '@/components/Headers';
-import HeroText from '@/components/HeroText';
+// import HeroText from '@/components/HeroText';
 import Service from '@/components/Service';
 import { Paperclip } from 'lucide-react';
 import Link from 'next/link';
 import React, { useRef, useState, useEffect } from 'react'
-import * as THREE from 'three'
+// import * as THREE from 'three'
 
 const HeroCanvas = dynamic(() => import("@/components/HeroText"), {
   ssr: false,
-  loading: () => <div className="h-screen w-full bg-slate-950" />, // Optionnel : un placeholder pour éviter les sauts de mise en page
+  loading: () => <div className="h-screen w-full bg-slate-950" />, 
 });
 
 const BackgroundCanvas = dynamic(

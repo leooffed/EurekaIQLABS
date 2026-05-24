@@ -18,6 +18,20 @@ const HeroCanvas = dynamic(() => import("@/components/HeroText"), {
   loading: () => <div className="h-screen w-full bg-slate-950" />, // Optionnel : un placeholder pour éviter les sauts de mise en page
 });
 
+const BackgroundCanvas = dynamic(
+  () => import("@/components/BackgroundCanvas"),
+  {
+    ssr: false,
+  },
+);
+
+// const BackgroundCanvas = dynamic(
+//   () => import("@/components/BackgroundCanvas"),
+//   {
+//     ssr: false,
+//   },
+// );
+
 const Page = () => {
   // --- Refs ---
   const canvasRef = useRef<HTMLDivElement>(null);
@@ -29,79 +43,7 @@ const Page = () => {
   const [amount, setAmount] = useState("Syteme de reservation automatique");
   const [dashboardOffset, setDashboardOffset] = useState(0);
 
-  // --- 1. Logique Three.js ---
-  useEffect(() => {
-    if (!canvasRef.current) return;
 
-    const container = canvasRef.current;
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000,
-    );
-    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    container.appendChild(renderer.domElement);
-
-    // Particules
-    const geometry = new THREE.BufferGeometry();
-    const particlesCount = 700;
-    const posArray = new Float32Array(particlesCount * 3);
-    for (let i = 0; i < particlesCount * 3; i++) {
-      posArray[i] = (Math.random() - 0.5) * 15;
-    }
-    geometry.setAttribute("position", new THREE.BufferAttribute(posArray, 3));
-
-    const material = new THREE.PointsMaterial({
-      size: 0.02,
-      color: 0x0ea5e9, // Brand Sky 500
-      transparent: true,
-      opacity: 0.8,
-    });
-
-    const particlesMesh = new THREE.Points(geometry, material);
-    scene.add(particlesMesh);
-    camera.position.z = 3;
-
-    // Interaction souris
-    let mouseX = 0;
-    let mouseY = 0;
-    const handleMouseMove = (e: MouseEvent) => {
-      mouseX = e.clientX / window.innerWidth - 0.5;
-      mouseY = e.clientY / window.innerHeight - 0.5;
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-
-    const animate = () => {
-      requestAnimationFrame(animate);
-      particlesMesh.rotation.y += 0.001;
-      particlesMesh.rotation.x += 0.001;
-      particlesMesh.rotation.y +=
-        0.05 * (mouseX - particlesMesh.rotation.y) * 0.1;
-      particlesMesh.rotation.x +=
-        0.05 * (mouseY - particlesMesh.rotation.x) * 0.1;
-      renderer.render(scene, camera);
-    };
-    animate();
-
-    // Redimensionnement
-    const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    };
-    window.addEventListener("resize", handleResize);
-
-    // Nettoyage au démontage du composant
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("resize", handleResize);
-      container.removeChild(renderer.domElement);
-    };
-  }, []);
 
   // --- 2. Scroll Reveal (Intersection Observer) ---
   useEffect(() => {
@@ -165,6 +107,7 @@ const Page = () => {
 
   return (
     <>
+      <BackgroundCanvas />
       <div ref={canvasRef} id="canvas-container"></div>
 
       <div
@@ -368,7 +311,7 @@ const Page = () => {
 
       {/* Services / Features Section */}
       <Service addToast={addToast} />
-      
+
       {/* Booking  */}
       <BookingSystem />
 

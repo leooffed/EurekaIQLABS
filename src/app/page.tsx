@@ -1,5 +1,7 @@
 "use client"
 
+import dynamic from "next/dynamic";
+
 import BookingSystem from '@/components/contacts/Booking';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
@@ -10,6 +12,11 @@ import { Paperclip } from 'lucide-react';
 import Link from 'next/link';
 import React, { useRef, useState, useEffect } from 'react'
 import * as THREE from 'three'
+
+const HeroCanvas = dynamic(() => import("@/components/HeroText"), {
+  ssr: false,
+  loading: () => <div className="h-screen w-full bg-slate-950" />, // Optionnel : un placeholder pour éviter les sauts de mise en page
+});
 
 const Page = () => {
   // --- Refs ---
@@ -182,7 +189,7 @@ const Page = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             {/* Hero Text */}
-            <HeroText addToast={addToast} />
+            <HeroCanvas addToast={addToast} />
 
             {/* Hero Dashboard Visual (adapté pour une agence web) */}
             <div

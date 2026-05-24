@@ -1,3 +1,4 @@
+'use client'
 import { fadeInUp, staggerContainer } from "@/hooks/animation";
 import { colors } from "@/hooks/color";
 import { motion } from "framer-motion";
@@ -9,38 +10,38 @@ const Services = () => {
     <section className="py-28 px-6 ">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-          Pourquoi les entreprises <span>perdent de l'argent</span> chaque fois.
+          Why do companies <span>lose money</span> each time.
         </h1>
 
         <p className="text-xl text-gray-300 mb-16 mx-auto">
-          Et comment{" "}
+          And how{" "}
           <span className="font-bold text-green-400">
             EurekaIQ<span className="text-[#106103]">.Agency</span>
           </span>{" "}
-          répare ça en 48h.
+          fixes it in 48h.
         </p>
 
         {/* Le PROBLEME  */}
         <div className="bg-gray-800 border-red-500/30 rounded-2xl p-8 text-left mb-12">
           <h2 className="text-2xl font-bold text-red-400 mb-4">
-            Le problème de 9 entreprises sur 10:
+            The problem of 9 companies out of 10:
           </h2>
           <ul className="space-y-3 text-lg text-gray-300">
             <li className="flex gap-3">
-              <span className="text-red-500">X</span> Un client veut réserver ou
-              connaitre à 23h. Votre Assistant dort. Client perdu.
+              <span className="text-red-500">X</span> A customer wants to book
+              or Know at 11 PM. Your assistant is asleep. Client lost.
             </li>
             <li className="flex gap-3">
-              <span className="text-red-500">X</span> Il appelle le lendemain.
-              Votre ligne est occupèe. Client perdu.
+              <span className="text-red-500">X</span> He calls the next day.
+              Your line is busy. Client lost.
             </li>
             <li className="flex gap-3">
-              <span className="text-red-500">X</span> Il va sur autre site. Vous
-              perder jusqu'a 100%. Fin de mois compliquer.
+              <span className="text-red-500">X</span> He goes to another site.
+              You lose up to 100%. End of month complicated.
             </li>
             <li className="flex gap-3">
               <span className="text-red-500">X</span>{" "}
-              <span>Resultat: 60 000 à 100 000€ perdus chaque mois.</span>.
+              <span>Result: €60,000 to €100,000 lost each month.</span>.
             </li>
           </ul>
         </div>
@@ -48,37 +49,39 @@ const Services = () => {
         {/* LA SOLUTION */}
         <div className="bg-gray-800 border-green-500/30 rounded-2xl p-8 text-left mb-12">
           <h2 className="text-2xl font-bold text-green-400 mb-4">
-            Notre solution: Le systéme "Réservation 24/7"
+            Our solution: The "24/7 Booking" system
           </h2>
           <p className="text-lg text-gray-300 mb-6">
-            On construire votre site et on install 1 bouton sur votre nouveau
-            site. C'est tout.
+            We'll build your website and install one button on your new site.
+            That's all.
           </p>
           <ul className="space-y-3 text-lg text-gray-300">
             <li className="flex gap-3">
-              <span className="text-green-500">✅</span> Le client clique - il
-              arrive direct sur Votre WhatsApp.
+              <span className="text-green-500">✅</span> The client clicks - he
+              arrives directly on your WhatsApp.
             </li>
             <li className="flex gap-3">
-              <span className="text-green-500">✅</span> Message auto 24/7:
+              <span className="text-green-500">✅</span> Auto message 24/7:
               <br />
               <span className="font-mono">
-                "Bonjour, merci de votre intérêt pour notre entreprise. Nous
-                sommes actuellement fermés, mais nous avons bien reçu votre
-                message. Un membre de notre équipe vous répondra dès que
-                possible pendant nos heures d'ouverture. En attendant, n'hésitez
-                pas à consulter notre site web pour plus d'informations sur nos
-                produits et services. Merci de votre compréhension et à bientôt
-                !"
+                "Hello, thank you for your interest in our company. We are
+                currently closed, but we have received your message. A member of
+                our team will get back to you as soon as possible during our
+                business hours. In the meantime, please feel free to visit our
+                website for more information about our products and services.
+                Thank you for your understanding and see you soon!"
               </span>
             </li>
             <li className="flex gap-3">
-              <span className="text-green-500">✅</span> Vous ne payez plus de
-              commission ou des abonnement. 100% pour vous.
+              <span className="text-green-500">✅</span> You no longer pay
+              commissions or subscriptions. 100% for you..
             </li>
             <li className="flex gap-3">
               <span className="text-green-500">✅</span>{" "}
-              <span>Installé en 48h. Garanti ou remboursé 100K</span>.
+              <span>
+                Installed in 48 hours. Guaranteed or your money back 100K
+              </span>
+              .
             </li>
           </ul>
         </div>
@@ -86,12 +89,11 @@ const Services = () => {
         {/* QUI Sommes nous */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-4">
-            Qui est EUREKAIQ<span className="text-[#106103]">.Agency</span> ?
+            Who is EUREKAIQ<span className="text-[#106103]">.Agency</span> ?
           </h2>
           <p className="text-lg text-gray-300">
-            Basé à Douala, et France PARIS Cameroun, EUREKAIQ
-            <span className="text-[#106103]">.Agency</span> est une agence
-            digitale spécialisée
+            Based in Douala and Paris, Cameroon, EUREKAIQ
+            <span className="text-[#106103]">.Agency</span> is a specialized digital agency
           </p>
         </div>
 
@@ -102,7 +104,7 @@ const Services = () => {
           }
           className="flex gap-4 w-full sm:w-auto items-center justify-center bg-green-500 hover:bg-green-600 text-gray-900 font-bold text-xl px-10 py-5 rounded-lg shadow-lg shadow-green-900/30"
         >
-          Je Stoppe les pertes Maintenant
+          I Stop the Losses Now
           <ArrowRightLeft />
         </Link>
       </div>

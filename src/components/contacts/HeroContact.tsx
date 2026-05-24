@@ -39,7 +39,7 @@ const Hero = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#106103] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#106103]"></span>
           </span>
-          Ouvert aux nouveaux projets
+          Open to new projects
         </motion.div>
 
         {/* Titre avec Dégradé */}
@@ -49,9 +49,9 @@ const Hero = () => {
           animate="visible"
           className="text-5xl md:text-7xl text-white font-bold tracking-tight mb-6"
         >
-          Augmenter 80% <br />
+          Increase 80% <br />
           <span className="bg-gradient-to-r from-[#106103] via-green-500 to-[#106103] bg-clip-text text-transparent">
-            de votre business.
+            of your business.
           </span>
         </motion.h1>
 
@@ -63,11 +63,12 @@ const Hero = () => {
           className={`mt-4 max-w-2xl mx-auto text-xl ${colors.muted} mb-10`}
         >
           EUREKAIQ Agency{" "}
-          <strong className={`${colors.text}`}>Votre entreprise</strong> perd de {" "}
-          <strong className={`${colors.text}`}>L'argent plus +2M/mois</strong>{" "}
-          Nous aidons les entreprises a avoir plus de client et les fideliser{" "}
-          <strong className={`${colors.text}`}>tout votre traffic </strong> est en
-          ligne
+          <strong className={`${colors.text}`}>Your company</strong> is losing{" "}
+          <strong className={`${colors.text}`}>more money +2M/month</strong>{" "}
+          We help businesses get more customers and retain them{" "}
+          <strong className={`${colors.text}`}>all your traffic </strong> is
+          online, we help you convert it into{" "}
+          <strong className={`${colors.text}`}>real revenue</strong>.
         </motion.p>
 
         <motion.div
@@ -85,7 +86,7 @@ const Hero = () => {
               const phoneNumber = "237671809395"; // ⚠️ ton numéro WhatsApp Business
 
               const message = encodeURIComponent(
-                "Bonjour, je souhaite réserver un appel stratégique.",
+                "Hello, I would like to schedule a strategic call.",
               );
 
               window.open(
@@ -96,7 +97,7 @@ const Hero = () => {
           >
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             <span className="relative flex items-center justify-center gap-2 cursor-pointer">
-              Réserver un appel
+              Schedule a Call
               <PhoneCall size={18} />
             </span>
           </motion.button>
@@ -106,7 +107,7 @@ const Hero = () => {
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 border border-white/10 bg-green-300 text-black font-bold rounded-full hover:bg-green-400 hover:text-white transition-colors backdrop-blur-md"
           >
-            Voir nos services
+            View Our Services
           </motion.button>
         </motion.div>
       </div>

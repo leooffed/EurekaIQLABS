@@ -1,3 +1,4 @@
+'use client'
 import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react'
@@ -24,7 +25,7 @@ const Headers = ({ addToast }: Props) => {
                 EK
               </div>
               <span className="font-bold text-xl tracking-tight text-white">
-                EurekaIQ<span className="text-[#106103]">.TECH</span>
+                EurekaIQ<span className="text-[#106103]">.Agency</span>
               </span>
             </div>
           </Link>
@@ -35,13 +36,13 @@ const Headers = ({ addToast }: Props) => {
               href="/"
               className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
             >
-              Accueil
+              Home
             </Link>
             <Link
               href="/about-us"
               className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
             >
-              A propos
+              About
             </Link>
           </div>
 
@@ -51,7 +52,7 @@ const Headers = ({ addToast }: Props) => {
               onClick={() => addToast("Demande de démo envoyée.")}
               className="bg-green-600 text-white hover:text-black px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg shadow-brand-500/20"
             >
-              Réserver sur WhatSApp
+              Free Conversion Audit on WhatsApp
             </button>
           </div>
 
@@ -77,17 +78,17 @@ const Headers = ({ addToast }: Props) => {
             href="/"
             className="block px-3 py-3 rounded-md text-base font-medium text-white hover:bg-white/10"
           >
-            Accueil
+            Home
           </Link>
           <Link
             href="/creation-site-web"
             className="block px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10"
           >
-            A propos
+            About
           </Link>
 
           <button className="w-full mt-4 bg-green-600 text-white px-3 py-3 rounded-md font-bold hover:bg-green-500">
-            Reservation sur WhatsApp
+            Free Conversion Audit on WhatsApp
           </button>
         </div>
       </div>

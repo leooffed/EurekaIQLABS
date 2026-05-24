@@ -20,10 +20,10 @@ const Footer = () => {
         <div
           className={`${colors.muted} text-sm text-white text-center md:text-left`}
         >
-          &copy; 2025 EurekaIQ Agency. Tous droits réservés.{" "}
+          &copy; 2025 EurekaIQ Agency. All rights reserved.{" "}
           <br />
           <span className="text-xs opacity-50">
-            Conçu Pour aider les entreprises à croître.
+            Designed to help businesses grow.
           </span>
         </div>
 

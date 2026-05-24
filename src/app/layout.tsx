@@ -13,8 +13,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EurekaIQ - Creator site web",
-  description: "Gagnez plus de clients avec un site web, ton entreprise perd de l'argent par manque de site web, EurekaIQ construire un site web sur mesure pour augmenter ton chiffre d'affaire.",
+  title: "EurekaIQ | Custom Website Creation & High Conversion Rates",
+  description:
+    "Development of premium web solutions, automated booking systems, and e-commerce platforms. Boost your company's revenue..",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
+  keywords: [
+    "Next.js Development",
+    "Website Creation",
+    "SaaS",
+    "SEO Optimization",
+    "B2B",
+  ],
+  openGraph: {
+    title: "EurekaIQ | Custom Website Creation & High Conversion Rates",
+    description:
+      "Development of premium web solutions, automated booking systems, and e-commerce platforms. Boost your company's revenue..",
+    url: "https://eurekaIQLabs.vercel.com", // À remplacer par votre futur domaine
+    siteName: "EurekaIQ",
+    images: [
+      {
+        url: "/og-image.png", // Image à la une lors des partages LinkedIn/WhatsApp
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({

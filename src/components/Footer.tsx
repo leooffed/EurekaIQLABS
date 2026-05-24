@@ -1,5 +1,6 @@
-import { Facemesh } from '@react-three/drei';
-import { X } from 'lucide-react';
+// import { Facemesh } from '@react-three/drei';
+'use client'
+import { WholeWord, X } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react'
 
@@ -133,7 +134,7 @@ const Footer = () => {
               href="https://web.facebook.com/profile.php?id=61578862343684&locale=fr_FR"
               className="text-gray-400 hover:text-white transition-colors flex"
             >
-              <Facemesh />
+              <WholeWord />
               Facebook
             </Link>
             <Link

@@ -22,10 +22,10 @@ const Headers = ({ addToast }: Props) => {
               onClick={() => window.scrollTo(0, 0)}
             >
               <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center text-white font-bold">
-                EK
+                SB
               </div>
               <span className="font-bold text-xl tracking-tight text-white">
-                EurekaIQ<span className="text-[#106103]">.Agency</span>
+                Scribel<span className="text-[#106103]">.Lab's</span>
               </span>
             </div>
           </Link>

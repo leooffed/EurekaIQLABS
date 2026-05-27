@@ -10,17 +10,17 @@ const Footer = () => {
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-gradient-to-br from-[#106103] to-green-500 rounded-lg flex items-center justify-center text-white">
             {/* <Zap size={18} /> */}
-            EK
+            SB
           </div>
           <span className="font-bold text-white font-mono text-xl tracking-tighter">
-            EUREKAIQ<span className="text-[#106103]">.</span>
+            SCRIBEL<span className="text-[#106103]">.Lab's</span>
           </span>
         </div>
 
         <div
           className={`${colors.muted} text-sm text-white text-center md:text-left`}
         >
-          &copy; 2025 EurekaIQ Agency. All rights reserved.{" "}
+          &copy; 2025 ScribelLab's. All rights reserved.{" "}
           <br />
           <span className="text-xs opacity-50">
             Designed to help businesses grow.

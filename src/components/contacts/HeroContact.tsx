@@ -62,7 +62,7 @@ const Hero = () => {
           transition={{ delay: 0.1 }}
           className={`mt-4 max-w-2xl mx-auto text-xl ${colors.muted} mb-10`}
         >
-          EUREKAIQ Agency{" "}
+          Scribel<span className="text-[#106103]">.Lab's</span>{" "}
           <strong className={`${colors.text}`}>Your company</strong> is losing{" "}
           <strong className={`${colors.text}`}>more money +2M/month</strong>{" "}
           We help businesses get more customers and retain them{" "}

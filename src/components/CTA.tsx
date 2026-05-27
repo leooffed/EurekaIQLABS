@@ -15,7 +15,7 @@ const CTA = ({ addToast }: Props) => {
         </h2>
         <p className="text-gray-400 mb-10 text-lg">
           Rejoignez plus de 50 entreprises qui ont transformé leur présence en
-          ligne avec EUREKAIQ<span className="text-[#106103]">.Agency</span>
+          ligne avec Scribel<span className="text-[#106103]">.Lab's</span>
         </p>
         <div className="p-2 glass-panel rounded-2xl max-w-lg mx-auto flex">
           <input

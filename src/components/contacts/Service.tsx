@@ -16,7 +16,7 @@ const Services = () => {
         <p className="text-xl text-gray-300 mb-16 mx-auto">
           And how{" "}
           <span className="font-bold text-green-400">
-            EurekaIQ<span className="text-[#106103]">.Agency</span>
+            Scribel<span className="text-[#106103]">.Lab's</span>
           </span>{" "}
           fixes it in 48h.
         </p>
@@ -89,18 +89,18 @@ const Services = () => {
         {/* QUI Sommes nous */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-4">
-            Who is EUREKAIQ<span className="text-[#106103]">.Agency</span> ?
+            Who is Scribel<span className="text-[#106103]">.Lab's</span> ?
           </h2>
           <p className="text-lg text-gray-300">
-            Based in Douala and Paris, Cameroon, EUREKAIQ
-            <span className="text-[#106103]">.Agency</span> is a specialized digital agency
+            Based in Douala and Paris, Cameroon, Scribel
+            <span className="text-[#106103]">.Lab's</span> is a specialized digital agency
           </p>
         </div>
 
         {/* CTA */}
         <Link
           href={
-            "https://wa.me/237671809395?text=Bonjour%EurekaIQ,%20je%20viens%de%20lire%20la%20page%20Propos.%20Je%20voudrais%20avoir%20plus%20d'informations."
+            "https://wa.me/237671809395?text=Bonjour%ScribelLab's,%20je%20viens%de%20lire%20la%20page%20Propos.%20Je%20voudrais%20avoir%20plus%20d'informations."
           }
           className="flex gap-4 w-full sm:w-auto items-center justify-center bg-green-500 hover:bg-green-600 text-gray-900 font-bold text-xl px-10 py-5 rounded-lg shadow-lg shadow-green-900/30"
         >

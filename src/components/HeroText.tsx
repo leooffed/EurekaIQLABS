@@ -23,7 +23,7 @@ const HeroText = ({ addToast }: Props) => {
 
       <p className="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
         <span className="font-bold text-white">
-          EurekaIQ<span className="text-[#106103] ">.Agency</span>
+          Scribel<span className="text-[#106103] ">.Lab's</span>
         </span>{" "}
         installs the WhatsApp booking system{" "}
         <span className="font-bold text-green-500">24/7</span> for businesses. Your customers book even at 2 AM. You respond when you want or let your AI assistant handle it.
@@ -32,7 +32,7 @@ const HeroText = ({ addToast }: Props) => {
       <div className="flex flex-col sm:flex-row gap-4">
         {/* Lien WhatsApp corrigé avec wa.me et encodage propre */}
         <Link
-          href="https://wa.me/237671809395?text=Bonjour%20EurekaIQ,%20je%20veux%20mon%20AUDIT%20GRATUIT%20pour%20mon%20Entreprise."
+          href="https://wa.me/237671809395?text=Bonjour%20ScribelLabs,%20je%20veux%20mon%20AUDIT%20GRATUIT%20pour%20mon%20Entreprise."
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-3 w-full sm:w-auto bg-green-500 hover:bg-green-600 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg shadow-green-500/30 transition-all duration-300 transform hover:scale-105"
@@ -47,17 +47,17 @@ const HeroText = ({ addToast }: Props) => {
           <img
             className="w-8 h-8 rounded-full border-2 border-slate-900 object-cover"
             src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100"
-            alt="Client EurekaIQ"
+            alt="Client ScribelLabs"
           />
           <img
             className="w-8 h-8 rounded-full border-2 border-slate-900 object-cover"
             src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100"
-            alt="Client EurekaIQ"
+            alt="Client ScribelLabs"
           />
           <img
             className="w-8 h-8 rounded-full border-2 border-slate-900 object-cover"
             src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=100"
-            alt="Client EurekaIQ"
+            alt="Client ScribelLabs"
           />
         </div>
         <p>+50 businesses already trust us</p>

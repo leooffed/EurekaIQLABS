@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EurekaIQ | Custom Website Creation & High Conversion Rates",
+  title: "Scribel | Custom Website Creation & High Conversion Rates",
   description:
     "Development of premium web solutions, automated booking systems, and e-commerce platforms. Boost your company's revenue..",
   icons: {
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     "B2B",
   ],
   openGraph: {
-    title: "EurekaIQ | Custom Website Creation & High Conversion Rates",
+    title: "Scribel Lab's | Custom Website Creation & High Conversion Rates",
     description:
       "Development of premium web solutions, automated booking systems, and e-commerce platforms. Boost your company's revenue..",
-    url: "https://eurekaIQLabs.vercel.com", // À remplacer par votre futur domaine
-    siteName: "EurekaIQ",
+    url: "https://ScribelLabs.vercel.com", // À remplacer par votre futur domaine
+    siteName: "Scribellab's",
     images: [
       {
         url: "/og-image.png", // Image à la une lors des partages LinkedIn/WhatsApp

@@ -133,7 +133,7 @@ const Service = ({ addToast }: Props) => {
           </h3>
           <p className="text-gray-300 mb-8">
             En 7 jours après l'intégration du système de réservation WhatsApp
-            par EurekaIQ.
+            par ScribelLab's.
           </p>
 
           <div className="grid grid-cols-2 gap-4">
@@ -168,7 +168,7 @@ const Service = ({ addToast }: Props) => {
           <p className="text-gray-300 mt-6 mb-8 text-lg">
             Le problème n'est pas votre site. Le problème c'est que vos clients
             ne peuvent pas vous joindre à 1h du matin ou réserver un appel en 2
-            clics. EurekaIQ installe un système de réservation WhatsApp 24/7.
+            clics. ScribelLab's installe un système de réservation WhatsApp 24/7.
           </p>
 
           <div className="space-y-6">
@@ -204,7 +204,7 @@ const Service = ({ addToast }: Props) => {
           </div>
 
           <a
-            href="https://wa.me/237671809395?text=Bonjour%20EurekaIQ,%20je%20veux%20la%20preuve%20que%20ça%20marche."
+            href="https://wa.me/237671809395?text=Bonjour%20ScribelLab's,%20je%20veux%20la%20preuve%20que%20ça%20marche."
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 inline-block w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold text-lg px-8 py-4 rounded-lg text-center transition-colors"

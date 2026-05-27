@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Scribel Lab's | Custom Website Creation & High Conversion Rates",
     description:
       "Development of premium web solutions, automated booking systems, and e-commerce platforms. Boost your company's revenue..",
-    url: "https://ScribelLabs.vercel.com", // À remplacer par votre futur domaine
+    url: "https://scribelstudio.vercel.com", // À remplacer par votre futur domaine
     siteName: "Scribellab's",
     images: [
       {
